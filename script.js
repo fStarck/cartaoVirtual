@@ -48,6 +48,14 @@ function toggleQRCode() {
   }
 }
 
+function sendContact() {
+  const link = document.createElement('a'); // Cria um elemento de link
+  link.href = "https://api.whatsapp.com/send?phone&text=Este%20%C3%A9%20o%20meu%20Cart%C3%A3o%20de%20Visita%20Digital%20https://fstarck.github.io/cartaoVirtual/";
+  link.target = "_blank"; // Abre o link em uma nova aba
+  link.click(); // Simula um clique no link
+}
+
+
 function displayMessage(text) {
   const existingMessage = document.querySelector('.download-message');
   if (existingMessage) {

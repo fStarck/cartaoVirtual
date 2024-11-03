@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Swipe Cards</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a9e1e32fae.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
 </head>
@@ -16,18 +17,20 @@
       <img src="./felipe3.1.jpg" alt="Foto de Perfil" class="profile-pic">
       <h2>Felipe Starck</h2>
       <h4>Desenvolvedor</h4>
-      <button onclick="saveContact()">Salvar na Agenda</button>
-      <button onclick="toggleQRCode()">Mostrar QR Code</button>
+      <button onclick="saveContact()"><i class="fa-regular fa-floppy-disk"></i> Salvar na Agenda</button>
+      <button onclick="sendContact()"><i class="fa-regular fa-share-from-square"></i> Enviar Cartão</button>
+      <button onclick="toggleQRCode()"><i class="fa-solid fa-qrcode"></i> Mostrar QR Code</button>
       <div id="qrcode" style="display: none;"></div> <!-- Div para o QR Code -->
       <div class="social-buttons">
-        <a href="tel:15997087195">📞</a>
-        <a href="https://wa.me/5515997087195" target="_blank">💬</a>
-        <a href="https://instagram.com/felipestarck" target="_blank">📷</a>
-        <a href="https://facebook.com/felipestarck" target="_blank">📘</a>
+        <a href="tel:15997087195"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://wa.me/5515997087195" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/fstarck/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/felipe.starck/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
       </div>
       <p>Desenvolvedor apaixonado por tecnologia e inovação. Sempre em busca de novos desafios e oportunidades de
         aprendizado.</p>
     </div>
+
   </div>
   <script src="script.js"></script>
 </body>
