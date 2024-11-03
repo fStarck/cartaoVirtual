@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swipe Cards</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+</head>
+
+<body>
+  <div class="cards-container">
+    <div class="card" id="card1">
+      <img src="./felipe3.1.jpg" alt="Foto de Perfil" class="profile-pic">
+      <h2>Felipe Starck</h2>
+      <h4>Desenvolvedor</h4>
+      <button onclick="saveContact()">Salvar na Agenda</button>
+      <button onclick="toggleQRCode()">Mostrar QR Code</button>
+      <div id="qrcode" style="display: none;"></div> <!-- Div para o QR Code -->
+      <div class="social-buttons">
+        <a href="tel:15997087195">📞</a>
+        <a href="https://wa.me/5515997087195" target="_blank">💬</a>
+        <a href="https://instagram.com/felipestarck" target="_blank">📷</a>
+        <a href="https://facebook.com/felipestarck" target="_blank">📘</a>
+      </div>
+      <p>Desenvolvedor apaixonado por tecnologia e inovação. Sempre em busca de novos desafios e oportunidades de
+        aprendizado.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
